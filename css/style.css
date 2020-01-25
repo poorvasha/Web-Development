@@ -178,95 +178,92 @@ section {
 /* ===========================================
                 content boxes
 ============================================ */
-.content-box-lg{
-    padding: 120px 0;
+.content-box-lg {
+  padding: 120px 0;
 }
-.content-box-md{
-    padding: 100px 0;
+.content-box-md {
+  padding: 100px 0;
 }
 
 /* ===========================================
                 vertical heading
 ============================================ */
-.vertical-heading h5{
-    color: #f4c613;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    word-spacing: 9px;
-    position: relative;
-        top:60px;
-        left: -63px;
-    display: inline-block;
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
+.vertical-heading h5 {
+  color: #f4c613;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  word-spacing: 9px;
+  position: relative;
+  top: 60px;
+  left: -53px;
+  display: inline-block;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
 }
-.vertical-heading h2{
-    margin: 0 0 0 35px;
-    font-size: 42px;
-    font-weight: 100;
-    line-height: 45px;
+.vertical-heading h2 {
+  margin: 0 0 0 35px;
+  font-size: 42px;
+  font-weight: 100;
+  line-height: 45px;
 }
 
 /* ===========================================
                 about 01
 ============================================ */
-#about-right p :first-child{
-    margin-bottom: 30px;
+#about-right p :first-child {
+  margin-bottom: 30px;
 }
-#about-bottom{
-    margin-top: 60px;
+#about-bottom {
+  margin-top: 60px;
 }
-#about-bottom img{
-    margin: 0 auto;
+#about-bottom img {
+  margin: 0 auto;
 }
 
 /* ===========================================
                 about 02
 ============================================ */
-#about-02{
-    background-color: #f4f4f4;
+#about-02 {
+  background-color: #f4f4f4;
 }
-.about-item{
-    background-color: #fff;
-    padding: 80px 30px;
-    box-shadow: 0 0 10px rgb(0,0,0, .1);
+.about-item {
+  background-color: #fff;
+  padding: 80px 30px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
 }
-.about-item i{
+.about-item i {
   font-size: 42px;
   margin: 0;
-
 }
-.about-item h3{
+.about-item h3 {
   font-size: 20px;
   margin-bottom: 10px;
 }
-.about-item hr{
+.about-item hr {
   width: 45px;
   height: 3px;
   background-color: #f4c613;
   margin: 0 auto;
   border: none;
 }
-.about-item p{
+.about-item p {
   margin-top: 20px;
 }
 /* hover state */
 .about-item:hover {
   background-color: #f4c613;
 }
-.about-item:hover i
-.about-item:hover h3
-.about-item:hover p{
+.about-item:hover i .about-item:hover h3 .about-item:hover p {
   background-color: #fff;
 }
-.about-item:hover hr{
+.about-item:hover hr {
   background-color: #fff;
 }
-.about-item:hover i{
+.about-item:hover i {
   transform: translateY(-20px);
   -webkit-transform: translateY(-20px);
   -moz-transform: translateY(-20px);
@@ -274,12 +271,153 @@ section {
   -o-transform: translateY(-20px);
 }
 /* smooth transition */
-.about-item 
-.about-item i
-.about-item hr{
-   transition: all 400ms ease-in-out;
-   -webkit-transition: all 400ms ease-in-out;
-   -moz-transition: all 400ms ease-in-out;
-   -ms-transition: all 400ms ease-in-out;
-   -o-transition: all 400ms ease-in-out;
+.about-item .about-item i .about-item hr {
+  transition: all 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+}
+
+/* ===========================================
+                Team 
+============================================ */
+#team-left .vertical-heading {
+  min-height: 160px;
+}
+#team-member {
+  margin: 8px;
+  position: relative;
+}
+.team-member-overlay {
+  background-color: rgba(33, 34, 38, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 300ms linear;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+}
+.team-member-info {
+  width: 100%;
+  height: 100%;
+  padding: 80px 0;
+}
+.team-member-info h6 {
+  color: #f4c613;
+  font-size: 16px;
+  margin: 0;
+}
+.team-member-info p {
+  color: #fff;
+}
+#team-member:hover .team-member-overlay {
+  opacity: 1;
+}
+
+/* ===========================================
+                social icon
+============================================ */
+ul.social-list {
+  padding: 0;
+  margin-top: 20px;
+}
+ul.social-list li {
+  display: inline-block;
+  padding: 0%;
+}
+ul.social-list li a {
+  border: 1px solid #fff;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  line-height: 35px;
+  color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 40ms linear;
+  -webkit-transition: all 40ms linear;
+  -moz-transition: all 40ms linear;
+  -ms-transition: all 40ms linear;
+  -o-transition: all 40ms linear;
+}
+ul.social-list li:nth-child(1) a:hover {
+  background-color: #3b5998;
+  border-color: transparent;
+}
+ul.social-list li:nth-child(2) a:hover {
+  background-color: #00aced;
+  border-color: transparent;
+}
+ul.social-list li:nth-child(3) a:hover {
+  background-color: #dd4b39;
+  border-color: transparent;
+}
+
+/* ===========================================
+                Slider buttons
+============================================ */
+.owl-theme .owl-nav [class*="owl-"] {
+  color: #212226;
+  font-size: 40px;
+  background: none;
+  margin: 0;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: none;
+  color: #212226;
+}
+
+/* ===========================================
+                skills
+============================================ */
+.skill {
+  margin-bottom: 20px;
+}
+.skill h4 {
+  line-height: 62px;
+  margin: 0;
+  font-weight: normal;
+}
+.progress {
+  height: 25px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  background: #efefef;
+  overflow: visible;
+}
+.progress-bar {
+  background-color: #f4c613;
+  position: relative;
+}
+.progress-bar span {
+  font-size: 11px;
+  font-weight: 10px;
+  font-family: "Open Sans", sans-serif;
+  background: #212226;
+  padding: 3px;
+  position: absolute;
+  left: 97%;
+  top: -47px;
+}
+.progress-bar span:before {
+  content: "";
+  border-top: 8px solid #212226;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  position: absolute;
+  bottom: -8px;
+  left: 23%;
 }
