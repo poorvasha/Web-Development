@@ -4,7 +4,7 @@
 $(window).on('load' , function(){
     $('#status').fadeOut();
     $('#preloader').delay(350).fadeOut()
-})
+});
 
 /* ======================================
                 silder
@@ -20,7 +20,7 @@ $(function(){
       dots: false,
       navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
   });
-})
+});
 
 /* ======================================
                 progress bar
@@ -40,4 +40,14 @@ $(function() {
       },{
         offset: "bottom-in-view"
       });
+});
+
+/* ======================================
+                progress bar
+========================================*/
+$(function(){
+
+  $("#services-tabs").responsiveTabs({
+    animation: 'slide'
+  });
 });
