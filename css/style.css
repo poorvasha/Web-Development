@@ -895,3 +895,65 @@ ul.social-list li:nth-child(3) a:hover {
 .pricing-table.black:hover{
   background: #f4c613;
 }
+
+/* ===========================================
+              Stats
+============================================ */
+#stats{
+  background: url("../img/stats/stats-bg.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+#stats .content-box-md {
+  background: rgb(0, 0, 0, 0.8);
+}
+#stats .vertical-heading{
+  margin-bottom: 50px;
+}
+#stats .vertical-heading h2{
+  color: #fff;
+}
+.stats-item{
+  background: rgba(61,68,68,0.6);
+  border-radius: 4px;
+  min-height: 170px;
+  padding: 25px 50px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -ms-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+}
+.stats-item i{
+  font-size: 42px;
+  color: #f4c613;
+  margin: 0 0 6px 0;
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -ms-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+}
+.stats-item h3{
+  font-size: 32px;
+  color: #fff;
+  margin: 5px 0 5px 0;
+}
+.stats-item p{
+  color: #fff;
+  margin: 0;
+}
+.stats-item:hover {
+  background: #f4c613;
+}
+.stats-item:hover i{
+  transform: translateY(-20px);
+  color: #212226;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+}
