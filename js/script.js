@@ -135,3 +135,50 @@ $(function(){
   });
 });
 
+/* ===========================================
+        Show and Hide white navidation
+============================================ */
+$(function(){
+
+  showHideNav();
+  $(window).scroll(function(){
+    showHideNav();
+  });
+
+
+
+  function showHideNav() {
+
+    if( $(window).scrollTop()>50){
+
+      $("nav").addClass("white-nav-top");
+      $(".navbar-brand img").attr("src", "img/logo/logo-dark.png");
+      $("#back-to-top").fadeIn();
+
+    }else{
+      
+      $("nav").removeClass("white-nav-top");
+      $(".navbar-brand img").attr("src", "img/logo/logo.png");
+      $("#back-to-top").fadeOut();
+    }
+    
+  }
+
+}); 
+
+// Smooth Scrolling
+$(function(){
+
+  $("a.smooth-scroll").click(function(event){
+    
+      event.preventDefault();
+
+      // get section id like #about #services
+      var section_id = $(this).attr("href");
+
+      $("html, body").animate({
+        scrollTop: $(section_id).offset().top - 64
+      }, 1250, "easeInOutExpo");
+  })
+
+});
